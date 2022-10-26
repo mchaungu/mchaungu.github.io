@@ -1,0 +1,54 @@
+@use './partials/variable' as *;
+@use './partials/mixins' as *;
+
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.title, .status {
+    text-align: center;
+}
+
+.logos{
+
+    display: flex;
+    justify-content: center;
+
+    
+
+    &__logo {
+        width: 5rem;
+        height: 5rem;
+    }
+}
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    margin:0;
+    align-items: center;
+
+    @include tablet{
+        flex-direction: row;
+        justify-content: center;
+        justify-content: space-between;
+        margin: 4rem 15% 0 15%;
+
+    }
+
+    &__bandsite, &__travelsite {
+        width: 40%;
+        height: 20rem;
+        border: 2px solid white;
+        border-radius: 10px;
+        width: 90%;
+        margin: 1rem 0 1rem 0;
+        overflow: hidden;
+
+    
+    }
+}
+
