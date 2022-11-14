@@ -25,30 +25,43 @@ body {
     }
 }
 
-.portfolio {
+.portfolios {
     display: flex;
     flex-direction: column;
     margin:0;
     align-items: center;
+    
+
 
     @include tablet{
         flex-direction: row;
-        justify-content: center;
+        width: 90%;
+        margin: 0 auto;
         justify-content: space-between;
-        margin: 4rem 15% 0 15%;
-
+        flex-wrap: wrap;
     }
 
-    &__bandsite, &__travelsite {
-        width: 40%;
+    &__portfolio {
+        width: 90%;
         height: 20rem;
         border: 2px solid white;
         border-radius: 10px;
-        width: 90%;
-        margin: 1rem 0 1rem 0;
-        overflow: hidden;
 
-    
+        margin: 2rem 0 1rem 0;
+        // overflow: hidden;
+
+        @include tablet {
+            width: 50%;
+        }
+
+        &__title {
+            text-align: center;
+        }
+
+        &__subheading {
+            margin: 0 0 0 1rem;
+        }
     }
+
 }
 

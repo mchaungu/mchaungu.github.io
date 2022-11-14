@@ -17,26 +17,37 @@ body {
   height: 5rem;
 }
 
-.portfolio {
+.portfolios {
   display: flex;
   flex-direction: column;
   margin: 0;
   align-items: center;
 }
 @media screen and (min-width: 768px) {
-  .portfolio {
+  .portfolios {
     flex-direction: row;
-    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
     justify-content: space-between;
-    margin: 4rem 15% 0 15%;
+    flex-direction: wrap;
   }
 }
-.portfolio__bandsite, .portfolio__travelsite {
-  width: 40%;
+.portfolios__portfolio {
+  width: 90%;
   height: 20rem;
   border: 2px solid white;
   border-radius: 10px;
-  width: 90%;
-  margin: 1rem 0 1rem 0;
+  margin: 2rem 0 1rem 0;
   overflow: hidden;
+}
+@media screen and (min-width: 768px) {
+  .portfolios__portfolio {
+    width: 50%;
+  }
+}
+.portfolios__portfolio__title {
+  text-align: center;
+}
+.portfolios__portfolio__subheading {
+  margin: 0 0 0 1rem;
 }/*# sourceMappingURL=style.css.map */
