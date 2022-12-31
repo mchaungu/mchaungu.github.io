@@ -336,6 +336,10 @@ main {
   border-radius: 20px;
 }
 
+.avatar-side-image {
+  border-radius: 20px;
+}
+
 .info-content .name {
   color: var(--white-2);
   font-size: 20px;
@@ -343,6 +347,7 @@ main {
   letter-spacing: -0.25px;
   margin-bottom: 10px;
 }
+
 
 
 
@@ -755,6 +760,11 @@ main {
   width: 100%;
   filter: grayscale(1);
   transition: var(--transition-1);
+}
+
+.clients-logo {
+  width: 12.5rem;
+  height: 6.25rem;
 }
 
 .clients-item img:hover { filter: grayscale(0); }
