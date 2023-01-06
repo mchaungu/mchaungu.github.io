@@ -1949,3 +1949,18 @@ textarea.form-input::-webkit-resizer { display: none; }
   min-height: 200px;
   max-height: 200px;
 }
+
+.name {
+    transform: translate(0, 0);
+    /* Other styles for the text */
+    animation: translation 2s ease-in-out;
+  }
+  
+  @keyframes translation {
+    from {
+      transform: translate(-100%, 0);
+    }
+    to {
+      transform: translate(0, 0);
+    }
+  }
